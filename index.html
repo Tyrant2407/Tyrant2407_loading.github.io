@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+    <link rel="stylesheet" href="loading.css" />
+  </head>
+  <body>
+    <div class="utama" id="utama">
+      <div class="tampilan" id="tampilan">
+        <span> &times; </span>
+        <div class="loading" id="loading"></div>
+        <h2>Menunggu</h2>
+      </div>
+      <a href="https://tyrant2407.github.io/index.html" target="_blank"><button>Tampilan Destkop</button></a>
+      <a href="https://tyrant2407.github.io/tyrant_webphone.github.io/" target="_blank"><button>Tampilan Smartphone</button></a>
+    </div>
+    <script>
+      const tampilan = document.getElementById("tampilan");
+      setTimeout(function () {
+        tampilan.textContent = "Pilih Perangkat Anda "
+      }, 2000);
+    </script>
+  </body>
+</html>
